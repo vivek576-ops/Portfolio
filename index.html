@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Modern personal portfolio website" />
+  <title>D. Manivivek • Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Background visuals -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg__blob bg__blob--a"></div>
+    <div class="bg__blob bg__blob--b"></div>
+    <div class="bg__grid"></div>
+  </div>
+
+  <!-- Skip link for accessibility -->
+  <a class="skip" href="#home">Skip to content</a>
+
+  <!-- Navbar -->
+  <header class="header" id="top">
+    <nav class="nav container">
+      <a class="brand" href="#home" aria-label="Go to hero section">
+        <span class="brand__mark">DM</span>
+        <span class="brand__text">D. Manivivek</span>
+      </a>
+
+      <button class="nav__toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span class="nav__toggleBar"></span>
+        <span class="nav__toggleBar"></span>
+        <span class="nav__toggleBar"></span>
+      </button>
+
+      <div class="nav__links" data-nav-links>
+        <a class="nav__link active" href="#home">Home</a>
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#projects">Projects</a>
+        <a class="nav__link" href="#resume">Resume</a>
+        <a class="nav__link" href="#contact">Contact</a>
+      </div>
+
+      <a class="btn btn--ghost nav__cta" href="#projects">
+        <i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>
+        <span>View Projects</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero container section" id="home">
+      <div class="hero__content">
+        <p class="pill reveal">
+          <i class="fa-solid fa-circle-dot" aria-hidden="true"></i>
+          Open to internships • 2026
+        </p>
+
+        <h1 class="hero__title reveal">
+          Hi, I’m <span class="gradientText">D. Manivivek</span>
+        </h1>
+
+        <p class="hero__role reveal">
+          <span class="muted">I build</span>
+          <span class="typing">responsive websites.</span>
+        </p>
+
+        <p class="hero__tagline reveal">
+          Web Developer | CSE Student.<br />
+          I build modern, responsive web experiences with clean UI and smooth UX.
+        </p>
+
+        <div class="hero__actions reveal">
+          <a class="btn btn--primary" href="#projects">
+            <i class="fa-solid fa-grid-2" aria-hidden="true"></i>
+            <span>View Projects</span>
+          </a>
+          <a class="btn btn--soft" href="#contact">
+            <i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
+            <span>Contact Me</span>
+          </a>
+        </div>
+
+        <div class="hero__meta reveal">
+          <div class="metaCard">
+            <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+            <div>
+              <p class="metaCard__label">Focus</p>
+              <p class="metaCard__value">Frontend + UI</p>
+            </div>
+          </div>
+          <div class="metaCard">
+            <i class="fa-solid fa-code" aria-hidden="true"></i>
+            <div>
+              <p class="metaCard__label">Tech</p>
+              <p class="metaCard__value">HTML • CSS • JS • Java</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero__panel reveal" aria-label="Highlights">
+        <div class="glassCard">
+          <div class="glassCard__top">
+            <div class="avatar" aria-hidden="true">DM</div>
+            <div>
+              <p class="glassCard__name">D. Manivivek</p>
+              <p class="glassCard__sub">Web Developer | CSE Student</p>
+            </div>
+          </div>
+
+          <div class="glassCard__stats">
+            <div class="stat">
+              <p class="stat__num">1</p>
+              <p class="stat__label">Project</p>
+            </div>
+            <div class="stat">
+              <p class="stat__num">4+</p>
+              <p class="stat__label">Core Skills</p>
+            </div>
+            <div class="stat">
+              <p class="stat__num">100%</p>
+              <p class="stat__label">Responsive</p>
+            </div>
+          </div>
+
+          <div class="glassCard__chips" aria-label="Key technologies">
+            <span class="chip"><i class="fa-brands fa-html5"></i> HTML</span>
+            <span class="chip"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+            <span class="chip"><i class="fa-brands fa-js"></i> JavaScript</span>
+            <span class="chip"><i class="fa-brands fa-java"></i> Java</span>
+          </div>
+
+          <div class="glassCard__links">
+            <a class="iconBtn" href="https://github.com/" target="_blank" rel="noreferrer">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+              <span class="srOnly">GitHub</span>
+            </a>
+            <a class="iconBtn" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+              <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+              <span class="srOnly">LinkedIn</span>
+            </a>
+            <a class="iconBtn" href="mailto:manivivek.12346@gmail.com">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <span class="srOnly">Email</span>
+            </a>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- About -->
+    <section class="container section" id="about">
+      <div class="sectionHead reveal">
+        <h2 class="sectionHead__title">About Me</h2>
+        <p class="sectionHead__sub">
+          A quick snapshot of what I’m good at and what I enjoy building.
+        </p>
+      </div>
+
+      <div class="aboutGrid">
+        <div class="aboutCard reveal">
+          <h3>Who I am</h3>
+          <p class="muted">
+            I’m a CSE student who loves building modern web experiences—clean UI, smooth
+            interactions, and performance that feels instant. I enjoy turning ideas into
+            polished products and learning new technologies along the way.
+          </p>
+          <div class="inlineList" aria-label="Highlights">
+            <span class="badge"><i class="fa-solid fa-wand-magic-sparkles"></i> UI/UX</span>
+            <span class="badge"><i class="fa-solid fa-layer-group"></i> Components</span>
+            <span class="badge"><i class="fa-solid fa-gauge-high"></i> Performance</span>
+          </div>
+        </div>
+
+        <div class="aboutCard reveal">
+          <h3>Tech I use</h3>
+          <div class="techGrid">
+            <div class="techItem">
+              <i class="fa-brands fa-html5"></i>
+              <div>
+                <p class="techItem__name">HTML</p>
+                <p class="techItem__desc">Semantic layouts & accessibility</p>
+              </div>
+            </div>
+            <div class="techItem">
+              <i class="fa-brands fa-css3-alt"></i>
+              <div>
+                <p class="techItem__name">CSS</p>
+                <p class="techItem__desc">Responsive UI, glass & gradients</p>
+              </div>
+            </div>
+            <div class="techItem">
+              <i class="fa-brands fa-js"></i>
+              <div>
+                <p class="techItem__name">JavaScript</p>
+                <p class="techItem__desc">Interactions, animations, DOM</p>
+              </div>
+            </div>
+            <div class="techItem">
+              <i class="fa-brands fa-java"></i>
+              <div>
+                <p class="techItem__name">Java</p>
+                <p class="techItem__desc">OOP & problem solving</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="aboutCard aboutCard--wide reveal">
+          <h3>What I’m looking for</h3>
+          <p class="muted">
+            Internship opportunities where I can contribute to real products, collaborate with
+            a team, and keep improving my frontend + software engineering skills.
+          </p>
+          <div class="aboutActions">
+            <a class="btn btn--soft" href="manivivekcv.pdf" target="_blank" rel="noreferrer">
+              <i class="fa-regular fa-file-lines" aria-hidden="true"></i>
+              <span>See Resume</span>
+            </a>
+            <a class="btn btn--ghost" href="#contact">
+              <i class="fa-solid fa-link" aria-hidden="true"></i>
+              <span>Let’s Connect</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="container section" id="projects">
+      <div class="sectionHead reveal">
+        <h2 class="sectionHead__title">Projects</h2>
+        <p class="sectionHead__sub">
+          A few builds that show my approach: clean UI, solid structure, and smooth UX.
+        </p>
+      </div>
+
+      <div class="projectsGrid">
+        <article class="projectCard reveal">
+          <div class="projectCard__top">
+            <div class="projectIcon">
+              <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+            </div>
+            <div>
+              <h3 class="projectCard__title">Personal Portfolio Website</h3>
+              <p class="projectCard__desc muted">
+                A responsive personal portfolio website to showcase my skills, projects, and contact information.
+              </p>
+            </div>
+          </div>
+          <div class="stack">
+            <span class="stack__item">HTML</span>
+            <span class="stack__item">CSS</span>
+            <span class="stack__item">JavaScript</span>
+          </div>
+          <div class="projectCard__actions">
+            <a class="btn btn--ghost btn--sm" href="https://github.com/" target="_blank" rel="noreferrer">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+              <span>View Code</span>
+            </a>
+            <a class="btn btn--primary btn--sm" href="#" data-demo>
+              <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+              <span>Live Demo</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section class="container section" id="resume">
+      <div class="sectionHead reveal">
+        <h2 class="sectionHead__title">Resume</h2>
+        <p class="sectionHead__sub">Education, skills, and experience in one place.</p>
+      </div>
+
+      <div class="resumeGrid">
+        <div class="resumeCard reveal">
+          <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+          <ul class="timeline">
+            <li class="timeline__item">
+              <p class="timeline__title">B.Tech in Computer Science (CSE)</p>
+              <p class="timeline__meta muted">Vignan's Institute of Information Technology <br>
+                Year : 2024 – 2028
+              </p>
+            </li>
+            <li class="timeline__item">
+              <p class="timeline__title">Intermediate (MPC)</p>
+              <p class="timeline__meta muted">Tirumala Junior College <br>
+                Year : 2022 – 2024
+              </p>
+            </li>
+            <li class="timeline__item">
+              <p class="timeline__title">Secondary School</p>
+              <p class="timeline__meta muted">ST.Joseph's EM High School <br>
+                Year : 2021 – 2022
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="resumeCard reveal">
+          <h3><i class="fa-solid fa-screwdriver-wrench"></i> Skills</h3>
+          <div class="skillsGrid" role="list">
+            <div class="skillCard" role="listitem">
+              <i class="fa-solid fa-c"></i>
+              <p class="skillCard__name">C Language</p>
+            </div>
+            <div class="skillCard" role="listitem">
+              <i class="fa-brands fa-html5"></i>
+              <p class="skillCard__name">HTML</p>
+            </div>
+            <div class="skillCard" role="listitem">
+              <i class="fa-brands fa-css3-alt"></i>
+              <p class="skillCard__name">CSS</p>
+            </div>
+            <div class="skillCard" role="listitem">
+              <i class="fa-brands fa-js"></i>
+              <p class="skillCard__name">JavaScript</p>
+            </div>
+            <div class="skillCard" role="listitem">
+              <i class="fa-brands fa-java"></i>
+              <p class="skillCard__name">Java</p>
+            </div>
+            <div class="skillCard" role="listitem">
+              <i class="fa-solid fa-database"></i>
+              <p class="skillCard__name">DBMS</p>
+            </div>
+            <div class="skillCard" role="listitem">
+              <i class="fa-brands fa-python"></i>
+              <p class="skillCard__name">Python</p>
+            </div>
+          </div>
+
+          <div class="resumeActions">
+            <a class="btn btn--ghost" href="#contact">
+              <i class="fa-regular fa-handshake" aria-hidden="true"></i>
+              <span>Hire / Collaborate</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="resumeCard resumeCard--wide reveal">
+          <h3><i class="fa-solid fa-certificate"></i> Certificates</h3>
+          <p class="muted">
+            Certifications that showcase my learning and proficiency in various web technologies.
+          </p>
+          <div class="experienceCard">
+            <div class="experienceCard__left">
+              <p class="experienceCard__role">Frontend Development</p>
+              <p class="muted">Issued: 2025</p>
+            </div>
+            <ul class="experienceCard__list">
+              <li>Comprehensive training in HTML, CSS, JavaScript, and responsive design.</li>
+              <li>Successfully completed hands-on capstone projects.</li>
+            </ul>
+          </div>
+
+          <div class="resumeActions" style="margin-top: 18px;">
+            <!-- Place your actual certificate file link or name here (e.g., certificates.pdf) -->
+            <a class="btn btn--primary" href="C.pdf" target="_blank" rel="noreferrer">
+              <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+              <span>View Credentials / Certificates</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="container section" id="contact">
+      <div class="sectionHead reveal">
+        <h2 class="sectionHead__title">Contact</h2>
+        <p class="sectionHead__sub">Let’s talk about internships, projects, or collaborations.</p>
+      </div>
+
+      <div class="contactGrid">
+        <div class="contactCard reveal">
+          <h3>Reach me</h3>
+
+          <div class="contactList">
+            <a class="contactItem" href="mailto:manivivek.12346@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+              <span>manivivek.12346@gmail.com</span>
+            </a>
+            <a class="contactItem" href="tel:+917032118129">
+              <i class="fa-solid fa-phone"></i>
+              <span>+91 7032118129</span>
+            </a>
+            <a class="contactItem" href="https://github.com/" target="_blank" rel="noreferrer">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a class="contactItem" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+              <i class="fa-brands fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+
+        <form class="formCard reveal" id="contactForm">
+          <h3>Send a message</h3>
+
+          <label class="field">
+            <span class="field__label">Name</span>
+            <input class="field__input" type="text" name="name" placeholder="Your name" required />
+          </label>
+
+          <label class="field">
+            <span class="field__label">Email</span>
+            <input class="field__input" type="email" name="email" placeholder="you@example.com" required />
+          </label>
+
+          <label class="field">
+            <span class="field__label">Message</span>
+            <textarea class="field__input field__textarea" name="message" placeholder="Tell me about your project..."
+              rows="5" required></textarea>
+          </label>
+
+          <button class="btn btn--primary" type="submit">
+            <i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
+            <span>Send</span>
+          </button>
+
+          <p class="formHint muted" id="formHint" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="muted">© <span id="year"></span> D. Manivivek. Built with HTML, CSS & JavaScript.</p>
+      <a class="toTop" href="#top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
